@@ -6,7 +6,7 @@
 - The main objective of testing the feature is to verify and validate that a user as an investor can upload the supported identification documents types like passport and ID card, The verification process works as per design synchronous or asynchronously, ensure correct business rules are being applied to each upload, Ensure correct error handling in case of failures, test edge cases which can be easily overlooked.
 - Ensure compliance with financial regulations like GDPR, KYC etc.
 - Validate secure handling of sensitive data during upload, transmition, storage.
-- 
+  
 ### Scope
 
 #### Included:
