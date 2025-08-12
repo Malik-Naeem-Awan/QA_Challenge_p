@@ -23,6 +23,7 @@ The main objective of testing the feature is to verify and validate that a user 
 - Regression tesing to ensure other parts do not get affected by the changes.
 - Third party API integrations or dependencies.
 - OCR technology testing (if used in the verification process).
+- Non functional testing of the feature
 
 ---
 
