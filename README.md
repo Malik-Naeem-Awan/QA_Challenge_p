@@ -55,7 +55,7 @@ It includes Positive test cases, Negative test cases and edge cases:
 ---
 
 ### Test Types
-- Manual test everything to add human factor for usability and user experience testing.
+- Manual test everything to add by default human factor for usability and user experience testing.
 - Automated E2E tests to cover main business flow of feature.
 - API testing to test backend stability and functionality.
 - Backend database validation.
