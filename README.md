@@ -3,8 +3,10 @@
 ## Part 1: Test Plan
 
 ### Objectives
-The main objective of testing the feature is to verify and validate that a user as an investor can upload the identification documents, The verification process works as per design synchronous or asynchronously, ensure correct business rules are being applied to each upload, Ensure correct error handling in case of failures, test edge cases which can be easily overlooked.
-
+- The main objective of testing the feature is to verify and validate that a user as an investor can upload the supported identification documents types like passport and ID card, The verification process works as per design synchronous or asynchronously, ensure correct business rules are being applied to each upload, Ensure correct error handling in case of failures, test edge cases which can be easily overlooked.
+- Ensure compliance with financial regulations like GDPR, KYC etc.
+- Validate secure handling of sensitive data during upload, transmition, storage.
+- 
 ### Scope
 
 #### Included:
@@ -12,16 +14,72 @@ The main objective of testing the feature is to verify and validate that a user 
 - Negative flow of uploading an ID document as an investor and error handling.
 - UI and API integration.
 - Synchronous or asynchronous request and jobs handling.
+- OCR technology data extraction and matching with investor information (if used in the verification process).
+- Compliance testing with regulatory standards of data privacy, processing and other regulations.
 - Complete in house built software feature
-- API authentication and authorization flows.
+- Security testing, API authentication and authorization flows.
+- Regression tesing to ensure other parts do not get affected by the changes.
 - Database validation.
+- Multiple browsers and devices compatitbility.
+- Non functional testing of the feature.
 
 #### Excluded:
-- Regression tesing to ensure other parts do not get affected by the changes.
+- Relevant features testing which require the verified ID document of investor as a prerequisite
+- Other non relevant features testing. e.g (payment, widrawals)
 - Third party API integrations or dependencies.
-- OCR technology testing (if used in the verification process).
-- Non functional testing of the feature.
-- Compliance testing with regulatory standards of data privacy, processing and other regulations.
+- Non functional testing of the entire platform as a whole.
+- Risk of fradulent ID documents.
+
+---
+
+### Test Types
+- Manual test everything to add by default human factor for usability and user experience testing.
+- Automated E2E tests to cover main flow of feature.
+- API testing to test backend stability and functionality.
+- Backend database validation.
+
+---
+
+### Test Techniques to be used
+- Functional testing: Positive & negative test scenarios plus business rules of actual functionality
+- Integration testing: Api integration with UI, correct synchronization handling.
+- Security testing: Data encryption, penetration testing for file upload.
+- Compliance testing: GDPR and KYC compliance standards as per requirements of busienss.
+- Performance testing: Response time of APIs and uploading documents one after the other for verification.
+- Boundary value analysis.
+- Error guessing.
+- Monkey testing.
+---
+###  Test Environment & Tools
+- Test Environment: Staging environment mirroring production.
+
+- Data: Synthetic test data compliant with GDPR.
+
+- Postman (API testing)
+
+- Selenium / Cypress (UI automation)
+
+- JMeter (performance testing)
+
+- OWASP ZAP (security testing)
+  
+---
+
+###  Entry Criteria
+- Requirements, user stories, Test plan finalized and approved.
+
+- Test environment ready with integrated verification API.
+
+- Test data prepared.
+  
+---
+
+###  Exit Criteria
+- All planned test cases executed.
+
+- No open high/critical severity defects.
+
+- Compliance checks passed.
 
 ---
 
@@ -55,23 +113,6 @@ It includes Positive test cases, Negative test cases and edge cases:
 
 ---
 
-### Test Types
-- Manual test everything to add by default human factor for usability and user experience testing.
-- Automated E2E tests to cover main business flow of feature.
-- API testing to test backend stability and functionality.
-- Backend database validation.
-
----
-
-### Test Techniques to be used
-- Functional testing.
-- Integration testing
-- System testing
-- Boundary value analysis.
-- Error guessing.
-- Monkey testing.
-
----
 
 ### Special Considerations
 **Sub task 3 Background processing for uploads**  
