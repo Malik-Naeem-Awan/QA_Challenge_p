@@ -56,11 +56,11 @@
 
 - Data: Synthetic test data compliant with GDPR.
 
-- Postman (API testing) (performace testing)
+- Postman (API testing) 
 
 - Selenium / Cypress (UI automation)
 
-- JMeter (performance testing)
+- JMeter & Google lighthouse (performace testing)
 
 - OWASP ZAP (security testing)
   
