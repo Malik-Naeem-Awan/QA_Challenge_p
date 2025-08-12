@@ -1,4 +1,3 @@
-# QA Challenge
 # Investor Uploading Identification Documents - Test Plan & Investigation
 
 ## Part 1: Test Plan
