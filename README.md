@@ -21,6 +21,7 @@ The main objective of testing the feature is to verify and validate that a user 
 - Third party API integrations or dependencies.
 - OCR technology testing (if used in the verification process).
 - Non functional testing of the feature.
+- Compliance testing with regulatory standards of data privacy, processing and other regulations.
 
 ---
 
