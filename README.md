@@ -21,7 +21,7 @@
 - Regression tesing to ensure other parts do not get affected by the changes.
 - Database validation.
 - Multiple browsers and devices compatitbility.
-- Non functional testing of the feature.
+- Non functional testing of the feature (accessibility, performance etc).
 
 #### Excluded:
 - Relevant features testing which require the verified ID document of investor as a prerequisite
@@ -46,6 +46,7 @@
 - Security testing: Data encryption, penetration testing for file upload.
 - Compliance testing: GDPR and KYC compliance standards as per requirements of busienss.
 - Performance testing: Response time of APIs and uploading documents one after the other for verification.
+- Accessibility testing: 
 - Boundary value analysis.
 - Error guessing.
 - Monkey testing.
@@ -55,13 +56,15 @@
 
 - Data: Synthetic test data compliant with GDPR.
 
-- Postman (API testing)
+- Postman (API testing) (performace testing)
 
 - Selenium / Cypress (UI automation)
 
 - JMeter (performance testing)
 
 - OWASP ZAP (security testing)
+  
+- aXe Tool (Accessibility testing)
   
 ---
 
