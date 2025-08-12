@@ -15,9 +15,9 @@ The main objective of testing the feature is to verify and validate that a user 
 - Negative flow of uploading an ID document as an investor and error handling.
 - UI and API integration.
 - Synchronous or asynchronous request and jobs handling.
-- Complete in hous built software feature
+- Complete in house built software feature
 - API authentication and authorization flows.
-- Datbase validation.
+- Database validation.
 
 #### Excluded:
 - Regression tesing to ensure other parts do not get affected by the changes.
