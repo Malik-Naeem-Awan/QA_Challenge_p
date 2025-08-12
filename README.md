@@ -87,6 +87,7 @@ I will explain how I will test if the system uses background processing for uplo
 8. When replacing an existing document, It only updates the document at the UI when backend gets updated after all validations. (integration of API and DB layer with UI, DB testing if it ensures only the latest uploaded document entry remains and replaces the already placed entry).
 9. Ensure the edge case when the existing document is still in state processing and user uploads second document for verification. How system behaves, does it replace the existing document and creates new job and kills the old job of processing.
 10. What if I upload the same file two times, does it get detected or does it replace the existing document being processed and restarts the whole verification process.
+11. Some of the test cases will be sifted from manual or automated UI testing type to API focused testing and backend testing.
 
 ---
 
