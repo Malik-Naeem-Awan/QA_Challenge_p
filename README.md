@@ -1,6 +1,4 @@
 # QA_Challenge_portagon
-Test plan for online ID verification, Bug reporting, communication with team
-
 # Investor Uploading Identification Documents - Test Plan & Investigation
 
 ## Part 1: Test Plan
