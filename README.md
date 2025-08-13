@@ -114,6 +114,25 @@ It includes Positive test cases, Negative test cases and edge cases:
 | Test valid upload functionality with slow internet | a) Valid Files format JPG or PDF. b) Valid documents with future expiry date. c) Select two files while uploading d) Valid file sizes less then 5 mb. | Test valid upload functionality with slow internet e.g 3G | Negative edge case | Manual test | The upload functionality should sync with the slow internet and processing should be asynchronous |
 | Test valid upload functionality with no internet | a) Valid Files format JPG or PDF. b) Valid documents with future expiry date. c) Select two files while uploading d) Valid file sizes less then 5 mb. | Test valid upload functionality with no internet e.g no wifi | Negative edge case | Manual test | The upload functionality should handle the error of upload correctly |
 
+
+# Three easy-to-overlook but important edge cases from your list are:
+
+### File name containing 300 characters
+
+Reason it’s important: Many systems fail on extremely long file names due to OS or database field limits, even if the file content itself is valid. This is an edge case that can break the upload flow silently if not handled. Plus XSS attacks possible with the filename.
+It Needs explicit handling.
+
+### Refresh or close the page while uploading
+
+Reason it’s important: This tests resilience against user interruption and ensures that partial uploads or canceled requests don’t corrupt data or leave the system in an inconsistent state.
+
+### Click upload document button multiple times in one go
+
+Why important: Tests concurrency control to prevent duplicate uploads, multiple requests, or race conditions in UI/API.
+
+These all target non-happy-path scenarios that aren’t obvious, but can cause serious bugs in production.
+
+
 ---
 
 
