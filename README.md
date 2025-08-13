@@ -115,7 +115,7 @@ It includes Positive test cases, Negative test cases and edge cases:
 | Test valid upload functionality with no internet | a) Valid Files format JPG or PDF. b) Valid documents with future expiry date. c) Select two files while uploading d) Valid file sizes less then 5 mb. | Test valid upload functionality with no internet e.g no wifi | Negative edge case | Manual test | The upload functionality should handle the error of upload correctly |
 
 
-# Three easy-to-overlook but important edge cases from your list are:
+# Three easy-to-overlook but important edge cases are:
 
 ### File name containing 300 characters
 
