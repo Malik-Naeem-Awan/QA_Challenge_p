@@ -29,10 +29,12 @@
 - Other non relevant features testing. e.g (payment, widrawals)
 - Third party API integrations or dependencies.
 - Non functional testing of the entire platform as a whole.
+- Static testing or white box test techniques
 
 ---
 
 ### Test Types
+- Static review of the implemented software feature.
 - Manual test everything to add by default human factor for usability and user experience testing.
 - Automated E2E tests to cover main flow of feature.
 - API testing to test backend stability and functionality.
@@ -41,6 +43,7 @@
 ---
 
 ### Test Techniques to be used
+- Whitebox and black box test techniques
 - Functional testing: Positive & negative test scenarios plus business rules of actual functionality
 - Integration testing: Api integration with UI, correct synchronization handling.
 - Security testing: Data encryption, penetration testing for file upload.
