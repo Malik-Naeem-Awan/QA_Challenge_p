@@ -24,12 +24,13 @@
 - Non functional testing of the feature (accessibility, performance etc).
 - Relevant features testing which require the verified ID document of investor as a prerequisite
 - Risk of fradulent ID documents.
+- Static testing or white box test techniques
+
 
 #### Excluded:
 - Other non relevant features testing. e.g (payment, widrawals)
 - Third party API integrations or dependencies.
 - Non functional testing of the entire platform as a whole.
-- Static testing or white box test techniques
 
 ---
 
