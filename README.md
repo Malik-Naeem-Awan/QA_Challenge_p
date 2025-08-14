@@ -49,6 +49,7 @@
 - Accessibility testing: 
 - Boundary value analysis.
 - Error guessing.
+- State transition testing
 - Monkey testing.
 ---
 ###  Test Environment & Tools
